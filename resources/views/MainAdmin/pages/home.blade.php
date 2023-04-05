@@ -41,45 +41,60 @@
                 </div>
                 <!--end::Toolbar-->
                 <div class="row g-5 g-xl-8">
-                    <div class="col-xl-4">
+                    <div class="col-xl-6">
                         <!--begin::Statistics Widget 5-->
-                        <a href="{{route('admin.supervisors')}}" class="card app-bg-color hoverable card-xl-stretch mb-xl-8">
+                        <a href="{{route('admin.countries')}}" class="card app-bg-color hoverable card-xl-stretch mb-xl-8">
                             <!--begin::Body-->
                             <div class="card-body">
 
-                                <i class="fa fa-user-check fa-2x text-white"></i>
+                                <i class="fa fa-map-pin fa-2x text-white"></i>
                                 <!--end::Svg Icon-->
-                                <div class="text-gray-100 fw-bolder fs-2 mb-2 mt-5">{{$data['supervisors']}}</div>
-                                <div class="fw-bold text-gray-100">المشرفين</div>
+                                <div class="text-gray-100 fw-bolder fs-2 mb-2 mt-5">{{$data['countries']}}</div>
+                                <div class="fw-bold text-gray-100">الدول</div>
                             </div>
                             <!--end::Body-->
                         </a>
                         <!--end::Statistics Widget 5-->
                     </div>
-                    <div class="col-xl-4">
+                    <div class="col-xl-6">
                         <!--begin::Statistics Widget 5-->
-                        <a href="{{route('admin.students')}}" class="card bg-body hoverable card-xl-stretch mb-xl-8 ">
+                        <a href="{{route('admin.cities')}}" class="card app-bg-color hoverable card-xl-stretch mb-xl-8 ">
                             <!--begin::Body-->
                             <div class="card-body">
                                 <!--begin::Svg Icon | path: icons/duotune/ecommerce/ecm008.svg-->
-                                <i class="fa fa-users fa-2x"></i>
-                                <div class="text-gray-900 fw-bolder fs-2 mb-2 mt-5">{{$data['students']}}</div>
-                                <div class="fw-bold text-gray-400">الطلاب</div>
+                                <i class="fa fa-map-pin fa-2x text-white"></i>
+                                <div class="text-white fw-bolder fs-2 mb-2 mt-5">{{$data['cities']}}</div>
+                                <div class="fw-bold text-white">المدن</div>
                             </div>
                             <!--end::Body-->
                         </a>
                         <!--end::Statistics Widget 5-->
                     </div>
-                    <div class="col-xl-4">
+                    <div class="col-xl-6">
                         <!--begin::Statistics Widget 5-->
-                        <a href="{{route('admin.instructors')}}" class="card app-bg-color hoverable card-xl-stretch mb-xl-8">
+                        <a href="{{route('admin.courses')}}" class="card app-bg-color hoverable card-xl-stretch mb-xl-8">
                             <!--begin::Body-->
                             <div class="card-body">
                                 <!--begin::Svg Icon | path: icons/duotune/finance/fin006.svg-->
-                                <i class="fa fa-user fa-2x text-white"></i>
+                                <i class="fa fa-circle fa-2x text-white"></i>
                                 <!--end::Svg Icon-->
-                                <div class="text-white fw-bolder fs-2 mb-2 mt-5">{{$data['instructors']}}</div>
-                                <div class="fw-bold text-white">المدرسين</div>
+                                <div class="text-white fw-bolder fs-2 mb-2 mt-5">{{$data['courses']}}</div>
+                                <div class="fw-bold text-white">الكورسات</div>
+                            </div>
+                            <!--end::Body-->
+                        </a>
+                        <!--end::Statistics Widget 5-->
+                    </div>
+                    <div class="col-xl-6">
+                        <!--begin::Statistics Widget 5-->
+                        <a href="{{route('admin.centers')}}" class="card app-bg-color hoverable card-xl-stretch mb-xl-8">
+                            <!--begin::Body-->
+                            <div class="card-body">
+                                <!--begin::Svg Icon | path: icons/duotune/finance/fin006.svg-->
+                                <i class="fa fa-circle fa-2x text-white"></i>
+                                <!--end::Svg Icon-->
+                                <div class="text-white fw-bolder fs-2 mb-2 mt-5">{{$data['centers']}}</div>
+                                <div class="fw-bold text-white">سنتر الكورسات</div>
                             </div>
                             <!--end::Body-->
                         </a>
