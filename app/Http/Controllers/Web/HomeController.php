@@ -17,7 +17,7 @@ class HomeController extends Controller
 
     public function index()
     {
-        $countries = Country::get();
+        $countries = Country::whereActive(1)->get();
         return view('Web.pages.home',compact('countries'));
     }
 
