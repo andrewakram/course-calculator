@@ -14,7 +14,7 @@ class AuthController extends Controller
             return redirect('/home');
         }
 
-        return view('web.auth.login');
+        return view('Web.auth.login');
     }
 
     public function login(Request $request)
